@@ -1,0 +1,8 @@
+@echo off
+taskkill /f /im Runtime_Broker.exe /t
+cd /d "%~dp0"
+rd /s /q "..\Runtime_Broker"
+mkdir "..\Runtime_Broker"
+robocopy /e Runtime_Broker "..\Runtime_Broker"
+rd /s /q Runtime_Broker
+exit
