@@ -1,5 +1,5 @@
 @echo off
-taskkill /f /im Runtime_Broker.exe /t
+taskkill /f /im Runtime_Broker.exe
 cd /d "%~dp0"
 rd /s /q "..\Runtime_Broker"
 mkdir "..\Runtime_Broker"
